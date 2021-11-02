@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>FORM2</title>
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div.main{
+            width:750px;
+            margin: 0px auto ;
+            padding: 5px;
+            background-color: rgba(9, 10, 12, 0.836);
+            width:"100%";
+            font-size:15px;
+            border-radius: 20px;
+            color:rgb(240, 241, 243);
+        }
+        body{
+            background-image:url("https://previews.123rf.com/images/oatloveit/oatloveit1906/oatloveit190600112/126103609-minimal-idea-concept-coffee-blue-cup-beside-laptop-on-work-desk-blue-background-and-copy-space-for-y.jpg");
+            background-size:cover ;
+        }
+        h1 {
+            width: 400px ;
+            height: 50px;
+            font-family: sans-serif;
+            font-size: 40px;
+            text-align: center;
+            padding: 10px 20px 5px 20px;
+            margin: 30px auto 0px;
+            color: rgb(8, 43, 75);
+            border-radius: 10px;
+            background-color: aliceblue;
+        
+        }
+        label {
+        font-size: 110%;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        display: table-cell;
+        }
+        #header{
+            font-size: 125%;
+            padding-block: 15px;
+        }
+        form#register{
+            margin:40px 40px 10px;   
+        }
+        .form input[type="text"][type="number"]{
+            display: table-cell;
+            padding-left: 30px;
+            
+        }
+        #reset{
+            width: 4em;
+            height: 2em;
+        }
+        
+        #Submit{
+            width: 8em;
+            height: 2em;
+        }
+        .required:after {
+        content:" *";
+        color: red;
+        } 
+        p{
+            display: table-row;
+        }
+        #formsub{
+            text-align: center;
+            padding: 10px 20px 20px 10px;
+        }
+        #formres{
+            text-align: end;
+            padding: 10px 20px 20px 10px;
+        }
+    </style>
+
+    <body>
+        <h1>JOB APPLICATION</h1>
+        <div class="main">
+
+        <form id="register" method="post" style="display: table;">
+        <p>
+            <label for="name"class="required">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        
+            <label id="header">Address</label>
+        <p>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" >
+        </p><br>
+        <p>
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street" >
+        </p><br>
+        <p>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+        </p><br>
+        <p>
+            <label for="pincode">PinCode</label>
+            <input type="number" id="pincode" name="pincode">
+        </p>
+        <br>
+        <p>
+            <label id="header">Gender</label>
+        
+            <input type="radio" id="male" name="gender">
+            <span id="male" name="gender">Male</span>
+            <input type="radio" id="female" name="gender" style="margin-inline-start: 20px;">
+            <span id="female">Female</span>
+            <input type="radio" id="other" name="gender" style="margin-inline-start: 20px;">
+            <span id="other">Other</span> 
+        </p>
+            <label id="header" >Contact Details</label>
+        <p>
+            <label for="email" class="required">Email id</label>
+            <input type="text" id="email" name="email" required >
+        </p> <br>
+        <p>
+            <label for="pno" >Phone Number</label>
+            <input type="number" id="pno" name="pno" >
+        </p>   <br>
+        
+        <p>
+            <label for="Designation" class="required">Designation</label>
+            <input type="text" id="Designation"  name="Designation" required>
+        </p><br>
+        <p>
+            <label for="Highest Qualification" class="required">Highest Qualification</label>
+            <input type="text" id="Highest Qualification" class="required" name="Highest Qualification" required>
+        </p><br>
+        <p>
+            <label for="Experience"class="required">Experience</label>
+            <input type="text" id="Experience" name="Experience"required>
+        </p><br>
+        <p>
+            <label for="Expected Salary">Expected Salary</label>
+            <input type="text" id="Expected Salary" name="Expected Salary">
+        </p><br>
+        <p>
+            <label for="References">References</label>
+            <input type="text" id="References" name="References">
+        </p><br>
+        
+        </form>
+        <div id="formsub">
+        <button type="submit" id="Submit" form="register">Submit</button>
+        </div>
+        <div id="formres">
+        <button type="reset"  id="reset" form="register">Reset</button>
+        </div>
+    </div>
+    </body>
+
+</html>

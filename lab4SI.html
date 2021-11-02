@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>FORM1</title>
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div.main{
+            width:900px;
+            margin: 100px auto 0px auto;
+            background-color: rgba(13, 14, 15, 0.836);
+            font-size:15px;
+            border-radius: 10px;
+            color:rgb(223, 227, 240);
+        }
+        h1 {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 30px 20px 20px 20px;
+        }
+        body{
+            background-image:url("http://cdn.eso.org/images/screen/eso1907a.jpg");
+            background-size:cover ;
+        }
+        label {
+        font-size: 110%;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px;
+        }
+        #header{
+            font-size: 125%;
+        }
+        form#register{
+            margin:40px;
+        }
+        #formsub{
+            text-align: center;
+            padding: 10px 20px 20px 10px;
+        }
+        .form input[type="text"]{
+            padding-left: 30px;;
+        }
+        #Submit{
+            width: 8em;
+            height: 2em;
+        }
+        .line-1 {
+        height: 1px;
+        background: rgb(231, 229, 229);
+        }
+        .required:after {
+        content:" *";
+        color: red;
+        }
+        
+    </style>
+
+    <body>
+        <div class="main">
+        <h1>STUDENT INFORMATION</h1>
+        <div class="line-1"></div>
+        <form id="register" method="post">
+            <label for="fname"class="required">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="sname"class="required">Second Name</label>
+            <input type="text" id="sname" name="sname" required><br><br>
+
+            <label id="header">Address</label><br><br>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" style="margin-inline-start: 9px;">
+            <label for="street" style="margin-inline-start: 4px;">Street</label>
+            <input type="text" id="street" name="street" style="margin-inline-start: 20px;"><br><br>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">&nbsp;
+            <label for="pincode">PinCode</label>
+            <input type="number" id="pincode" name="pincode"><br><br>
+
+                <label id="header">Gender</label>
+      
+                <input
+                  type="radio"
+                  id="Male"
+                  name="gender"
+                  style="margin-inline-start: 60px">
+                <span id="Male">Male</span>
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  style="margin-inline-start: 20px">
+                <span id="female">Female</span>
+                <input
+                  type="radio"
+                  id="other"
+                  name="gender"
+                  style="margin-inline-start: 20px">
+                <span id="other">Other</span>
+              <br><br>
+
+            <label id="header" >Contact Details</label><br><br>
+            <label for="email" class="required">Email id</label>
+            <input type="text" id="email" name="email" style="margin-inline-start: 52px;" required><br><br>
+            <label for="pno" class="required">Phone Number</label>
+            <input type="number" id="pno" name="pno" required><br><br>
+
+            <label for="date of birth" class="required">Date Of Birth</label>
+            <input type="date" id="date of birth" name="date of birth" style="margin-inline-start: 18px;" required><br><br>
+
+            <label for="hobbies">Hobbies</label> 
+            <input type="text" id="hobbies" name="hobbies" style="margin-inline-start: 63px;"><br><br>
+
+            <label for="semester" class="required"> Semester</label>
+            <select style="margin-inline-start: 43px;" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select><br><br>
+            <label for="subjects" class="required"> Subjects</label><br>
+            <select multiple style="margin-left: 42px;"required>
+                <option>Fundamentals of Computer Programming</option>
+                <option>Data Structures</option>
+                <option>Computer Networks</option>
+                <option>Object Oriented Programming</option>
+                <option>Design and Analysis of Algorithms</option>
+                <option>Computer Architecture and Organisation</option>
+                <option>Discrete Mathematics</option>
+                <option>Database Management Systems</option>
+                </select>
+                <p style="margin-left: 43px; font-size: small;">[Hold down the Ctrl (windows) or Command (Mac) button to select multiple options]</p>
+            
+            <div id="formsub">
+            <input type="submit" value="Submit" name="Submit" id="Submit" style="margin-block:20px ;" >
+            </div>
+
+        </form>
+    </div>
+    
+    </body>
+
+</html>
